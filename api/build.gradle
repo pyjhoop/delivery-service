@@ -1,0 +1,48 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' // 자식은 부모가 설정한 버전을 따라가기에 버전은 생략이 가능하다.
+    id 'io.spring.dependency-management'
+}
+
+group = 'org.delivery'
+version = '1.0-SNAPSHOT'
+sourceCompatibility = '11'
+
+// 롬복이 어노테이션 기반이기에 컴파일시 사용하겠다는 의미
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // 한 부모 아래에 api 모듈이 db의 모듈을 사용하겠다
+    implementation project(':db')
+
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    implementation 'org.springdoc:springdoc-openapi-ui:1.7.0'
+
+
+}
+
+test {
+    useJUnitPlatform()
+}
+
+bootJar{
+    enabled = true
+}
+
+jar {
+    enabled = false
+}

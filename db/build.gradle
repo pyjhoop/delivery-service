@@ -1,0 +1,43 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' // 자식은 부모가 설정한 버전을 따라가기에 버전은 생략이 가능하다.
+    id 'io.spring.dependency-management'
+}
+
+group = 'org.delivery'
+version = '1.0-SNAPSHOT'
+sourceCompatibility = '11'
+
+// 롬복이 어노테이션 기반이기에 컴파일시 사용하겠다는 의미
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // 여기는 DB만 설정할거여서 필요없는 디펜던시는 삭제함
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    runtimeOnly 'com.mysql:mysql-connector-j'
+
+}
+
+test {
+    useJUnitPlatform()
+}
+
+// db 모듈은 실행은 안하지만 자바 클래스가 필요하기에 클래스가 모인 plain.jar는 있어야 한다.
+bootJar {
+    enabled = false
+}
+
+jar {
+    enabled = true
+}

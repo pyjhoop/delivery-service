@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.7.14'
+    id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+}
+
+group = 'org.delivery'
+version = '1.0-SNAPSHOT'
+
+// 하위에 있는 모든 프로젝트에 적용시키는 내용
+allprojects {
+    repositories {
+        mavenCentral()
+    }
+}
+
+// 부모 프로젝트에는 소스코드를 작성하지 않을거기에 bootJar생성을 막을 거다
+bootJar{
+    enabled = false
+}
+// jar로 패키징 하지 않겠다.
+jar {
+    enabled = false
+}
