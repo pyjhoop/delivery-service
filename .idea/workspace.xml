@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5917913-ac9b-43df-a19e-85654e96e24d" name="Changes" comment="#1 프로젝트 생성 및 모듈 구성">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="f5917913-ac9b-43df-a19e-85654e96e24d" name="Changes" comment="#2 Filter를 통해 Request, Response log 설정하기">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/delivery/api/account/AccountApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/delivery/api/account/AccountApiController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +101,7 @@
       <option name="presentableId" value="Default" />
       <updated>1703674110871</updated>
       <workItem from="1703674111424" duration="7429000" />
-      <workItem from="1703696429212" duration="2101000" />
+      <workItem from="1703696429212" duration="3056000" />
     </task>
     <task id="LOCAL-00001" summary="#1 프로젝트 생성 및 모듈 구성">
       <option name="closed" value="true" />
@@ -113,7 +111,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703680429638</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="#2 Filter를 통해 Request, Response log 설정하기">
+      <option name="closed" value="true" />
+      <created>1703698716839</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1703698716839</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +127,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="#1 프로젝트 생성 및 모듈 구성" />
-    <option name="LAST_COMMIT_MESSAGE" value="#1 프로젝트 생성 및 모듈 구성" />
+    <MESSAGE value="#2 Filter를 통해 Request, Response log 설정하기" />
+    <option name="LAST_COMMIT_MESSAGE" value="#2 Filter를 통해 Request, Response log 설정하기" />
   </component>
 </project>
