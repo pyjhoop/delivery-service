@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5917913-ac9b-43df-a19e-85654e96e24d" name="Changes" comment="#5 Interceptor를 통한 인증 기반 적용하기">
+    <list default="true" id="f5917913-ac9b-43df-a19e-85654e96e24d" name="Changes" comment="#6 UserEntity 작성">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/delivery/api/ApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/delivery/api/ApiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/delivery/api/account/AccountApiController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/delivery/api/account/model/AccountMeResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/src/main/java/org/delivery/db/account/AccountEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/src/main/java/org/delivery/db/account/AccountRepository.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,9 +40,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
         <option value="Interface" />
+        <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -75,6 +81,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.delivery.api.domain.user.controller" />
+      <recent name="org.delivery.api.common.annotation" />
       <recent name="org.delivery.api.common.error" />
     </key>
   </component>
@@ -110,7 +118,7 @@
       <workItem from="1703696429212" duration="3456000" />
       <workItem from="1703734275839" duration="5292000" />
       <workItem from="1703741761471" duration="58000" />
-      <workItem from="1703754027228" duration="1412000" />
+      <workItem from="1703754027228" duration="5222000" />
     </task>
     <task id="LOCAL-00001" summary="#1 프로젝트 생성 및 모듈 구성">
       <option name="closed" value="true" />
@@ -152,7 +160,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703739817862</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="#6 UserEntity 작성">
+      <option name="closed" value="true" />
+      <created>1703755489339</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1703755489339</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,6 +180,7 @@
     <MESSAGE value="#3 API 공통 Spec 적용하기&#10;&#10;API 응답시 공통적인 형태로 응답하기 위한 공통 Spec 적용.&#10;static 메서드를 활용하는 방안은 굉장히 좋은 것 같다." />
     <MESSAGE value="#4 ExceptionHandler 적용하기&#10;&#10;ExceptionHandler 저용을 위해 ErrorCode 생성" />
     <MESSAGE value="#5 Interceptor를 통한 인증 기반 적용하기" />
-    <option name="LAST_COMMIT_MESSAGE" value="#5 Interceptor를 통한 인증 기반 적용하기" />
+    <MESSAGE value="#6 UserEntity 작성" />
+    <option name="LAST_COMMIT_MESSAGE" value="#6 UserEntity 작성" />
   </component>
 </project>
