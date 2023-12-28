@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5917913-ac9b-43df-a19e-85654e96e24d" name="Changes" comment="#3 API 공통 Spec 적용하기&#10;&#10;API 응답시 공통적인 형태로 응답하기 위한 공통 Spec 적용.&#10;static 메서드를 활용하는 방안은 굉장히 좋은 것 같다.">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="f5917913-ac9b-43df-a19e-85654e96e24d" name="Changes" comment="#4 ExceptionHandler 적용하기&#10;&#10;ExceptionHandler 저용을 위해 ErrorCode 생성">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/delivery/api/account/AccountApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/delivery/api/account/AccountApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/delivery/api/common/api/Api.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/delivery/api/common/api/Api.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/delivery/api/common/api/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/delivery/api/common/api/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/src/main/java/org/delivery/db/account/AccountRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/db/src/main/java/org/delivery/db/account/AccountRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +108,7 @@
       <updated>1703674110871</updated>
       <workItem from="1703674111424" duration="7429000" />
       <workItem from="1703696429212" duration="3456000" />
-      <workItem from="1703734275839" duration="3736000" />
+      <workItem from="1703734275839" duration="5041000" />
     </task>
     <task id="LOCAL-00001" summary="#1 프로젝트 생성 및 모듈 구성">
       <option name="closed" value="true" />
@@ -139,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703699791219</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="#4 ExceptionHandler 적용하기&#10;&#10;ExceptionHandler 저용을 위해 ErrorCode 생성">
+      <option name="closed" value="true" />
+      <created>1703738630613</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1703738630613</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +152,7 @@
     <MESSAGE value="#1 프로젝트 생성 및 모듈 구성" />
     <MESSAGE value="#2 Filter를 통해 Request, Response log 설정하기" />
     <MESSAGE value="#3 API 공통 Spec 적용하기&#10;&#10;API 응답시 공통적인 형태로 응답하기 위한 공통 Spec 적용.&#10;static 메서드를 활용하는 방안은 굉장히 좋은 것 같다." />
-    <option name="LAST_COMMIT_MESSAGE" value="#3 API 공통 Spec 적용하기&#10;&#10;API 응답시 공통적인 형태로 응답하기 위한 공통 Spec 적용.&#10;static 메서드를 활용하는 방안은 굉장히 좋은 것 같다." />
+    <MESSAGE value="#4 ExceptionHandler 적용하기&#10;&#10;ExceptionHandler 저용을 위해 ErrorCode 생성" />
+    <option name="LAST_COMMIT_MESSAGE" value="#4 ExceptionHandler 적용하기&#10;&#10;ExceptionHandler 저용을 위해 ErrorCode 생성" />
   </component>
 </project>
