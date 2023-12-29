@@ -38,4 +38,10 @@ public class TokenBusiness {
 
     }
 
+    public Long validationAccessToken(String accessToken){
+        var userId = tokenService.validationToken(accessToken);
+        return userId;
+
+    }
+
 }

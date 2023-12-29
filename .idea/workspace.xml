@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5917913-ac9b-43df-a19e-85654e96e24d" name="Changes" comment="#8 토큰 서비스 로직 만들기&#10;&#10;accessToken, refreshToken 생성 로직과 예외 발생시 예외처리 코드 작성">
+    <list default="true" id="f5917913-ac9b-43df-a19e-85654e96e24d" name="Changes" comment="#9 사용자 로그인시 토큰 발행 적용하기&#10;&#10;사용자 로그인시 accessToken, refreshToken 발생해서 응답해주기">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/delivery/api/common/error/TokenErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/delivery/api/common/error/TokenErrorCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/delivery/api/config/Web/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/delivery/api/config/Web/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/delivery/api/domain/token/business/TokenBusiness.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/delivery/api/domain/token/business/TokenBusiness.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/main/java/org/delivery/api/domain/user/business/UserBusiness.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/delivery/api/domain/user/business/UserBusiness.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/delivery/api/domain/user/controller/UserOpenApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/delivery/api/domain/user/controller/UserOpenApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/delivery/api/domain/user/controller/UserApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/delivery/api/domain/user/controller/UserApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/delivery/api/domain/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/delivery/api/domain/user/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/delivery/api/interceptor/AuthorizationInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/delivery/api/interceptor/AuthorizationInterceptor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,8 +43,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="AnnotationType" />
         <option value="Interface" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -116,7 +121,7 @@
       <workItem from="1703734275839" duration="5292000" />
       <workItem from="1703741761471" duration="58000" />
       <workItem from="1703754027228" duration="7703000" />
-      <workItem from="1703829456732" duration="2346000" />
+      <workItem from="1703829456732" duration="4809000" />
     </task>
     <task id="LOCAL-00001" summary="#1 프로젝트 생성 및 모듈 구성">
       <option name="closed" value="true" />
@@ -182,7 +187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703831588795</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="#9 사용자 로그인시 토큰 발행 적용하기&#10;&#10;사용자 로그인시 accessToken, refreshToken 발생해서 응답해주기">
+      <option name="closed" value="true" />
+      <created>1703833322433</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1703833322433</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,6 +210,7 @@
     <MESSAGE value="#6 UserEntity 작성" />
     <MESSAGE value="#7 사용자 서비스 로직 생성&#10;&#10;controller -&gt; business -&gt; service -&gt; repository 순으로 실행&#10;service에는 특정 서비스에 대한 책임만 갖도록 수행 -&gt; 도메인 로직 처리&#10;business에는 여러 서비스를 통합해서 비즈니스 로직 처리." />
     <MESSAGE value="#8 토큰 서비스 로직 만들기&#10;&#10;accessToken, refreshToken 생성 로직과 예외 발생시 예외처리 코드 작성" />
-    <option name="LAST_COMMIT_MESSAGE" value="#8 토큰 서비스 로직 만들기&#10;&#10;accessToken, refreshToken 생성 로직과 예외 발생시 예외처리 코드 작성" />
+    <MESSAGE value="#9 사용자 로그인시 토큰 발행 적용하기&#10;&#10;사용자 로그인시 accessToken, refreshToken 발생해서 응답해주기" />
+    <option name="LAST_COMMIT_MESSAGE" value="#9 사용자 로그인시 토큰 발행 적용하기&#10;&#10;사용자 로그인시 accessToken, refreshToken 발생해서 응답해주기" />
   </component>
 </project>
