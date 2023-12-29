@@ -4,6 +4,8 @@ import lombok.RequiredArgsConstructor;
 import org.delivery.api.common.annotation.Business;
 import org.delivery.api.common.error.ErrorCode;
 import org.delivery.api.common.exception.ApiException;
+import org.delivery.api.domain.token.business.TokenBusiness;
+import org.delivery.api.domain.token.controller.model.TokenResponse;
 import org.delivery.api.domain.user.controller.model.UserLoginRequest;
 import org.delivery.api.domain.user.controller.model.UserRegisterRequest;
 import org.delivery.api.domain.user.controller.model.UserResponse;
@@ -18,6 +20,7 @@ public class UserBusiness {
 
     private final UserService userService;
     private final UserConverter userConverter;
+    private final TokenBusiness tokenBusiness;
 
 
     // controller - > business - > service - > repository 순으로 갈거고
@@ -50,14 +53,15 @@ public class UserBusiness {
      * 3. token 생성
      * 4. token response
      */
-    public UserResponse login(UserLoginRequest request) {
+    public TokenResponse login(UserLoginRequest request) {
 
         var userEntity = userService.login(request.getEmail(), request.getPassword());
         // 사용자가 없으면 throw
 
         // TODO 토큰 로직으로 변경하기
+        var tokenResponse = tokenBusiness.issueToken(userEntity);
 
-        return userConverter.toResponse(userEntity);
+        return tokenResponse;
 
     }
 }
