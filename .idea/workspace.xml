@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5917913-ac9b-43df-a19e-85654e96e24d" name="Changes" comment="#10 사용자 인증 로직 적용하기&#10;&#10;사용자 인증 로직 적용하기 &#10;- 인터셉터로 header에 토큰이 넘어왔는지 확인을 하고&#10;- 컨텍스트 홀더에 userId를 저장했으니 컨트롤러에서 컨텍스트 홀더에 userId를 추출해야하는데 이방법은 AOP 방식으로 처리&#10;- 어노테이션 만들고 User클래스 생성 후 HandlerMethodArgumentResolver구현하는 리졸버를 만든뒤 &#10;- WebConfig에 해당 리졸버를 등록해준다.">
+    <list default="true" id="f5917913-ac9b-43df-a19e-85654e96e24d" name="Changes" comment="#11 Sore 데이터베이스 개발 및 서비스 로직 개발&#10;&#10;- 워크벤치에서 Store 테이블 생성&#10;- Entity, Repository 생성 ** 엔티티에 고정값이 들어가야 하면 enum 사용하고 엔티티에 꼭 @Enumerate()사용&#10;- buisness, converter, service, controller 생성">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,8 +36,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -76,6 +76,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.delivery.api.domain.storemenu.controller" />
       <recent name="org.delivery.db.store.enums" />
       <recent name="org.delivery.api.common.error" />
       <recent name="org.delivery.api.domain.user.controller" />
@@ -116,7 +117,7 @@
       <workItem from="1703741761471" duration="58000" />
       <workItem from="1703754027228" duration="7703000" />
       <workItem from="1703829456732" duration="5716000" />
-      <workItem from="1703983860244" duration="4893000" />
+      <workItem from="1703983860244" duration="8305000" />
     </task>
     <task id="LOCAL-00001" summary="#1 프로젝트 생성 및 모듈 구성">
       <option name="closed" value="true" />
@@ -198,7 +199,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703836663904</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="#11 Sore 데이터베이스 개발 및 서비스 로직 개발&#10;&#10;- 워크벤치에서 Store 테이블 생성&#10;- Entity, Repository 생성 ** 엔티티에 고정값이 들어가야 하면 enum 사용하고 엔티티에 꼭 @Enumerate()사용&#10;- buisness, converter, service, controller 생성">
+      <option name="closed" value="true" />
+      <created>1703991593169</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1703991593169</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +224,7 @@
     <MESSAGE value="#8 토큰 서비스 로직 만들기&#10;&#10;accessToken, refreshToken 생성 로직과 예외 발생시 예외처리 코드 작성" />
     <MESSAGE value="#9 사용자 로그인시 토큰 발행 적용하기&#10;&#10;사용자 로그인시 accessToken, refreshToken 발생해서 응답해주기" />
     <MESSAGE value="#10 사용자 인증 로직 적용하기&#10;&#10;사용자 인증 로직 적용하기 &#10;- 인터셉터로 header에 토큰이 넘어왔는지 확인을 하고&#10;- 컨텍스트 홀더에 userId를 저장했으니 컨트롤러에서 컨텍스트 홀더에 userId를 추출해야하는데 이방법은 AOP 방식으로 처리&#10;- 어노테이션 만들고 User클래스 생성 후 HandlerMethodArgumentResolver구현하는 리졸버를 만든뒤 &#10;- WebConfig에 해당 리졸버를 등록해준다." />
-    <option name="LAST_COMMIT_MESSAGE" value="#10 사용자 인증 로직 적용하기&#10;&#10;사용자 인증 로직 적용하기 &#10;- 인터셉터로 header에 토큰이 넘어왔는지 확인을 하고&#10;- 컨텍스트 홀더에 userId를 저장했으니 컨트롤러에서 컨텍스트 홀더에 userId를 추출해야하는데 이방법은 AOP 방식으로 처리&#10;- 어노테이션 만들고 User클래스 생성 후 HandlerMethodArgumentResolver구현하는 리졸버를 만든뒤 &#10;- WebConfig에 해당 리졸버를 등록해준다." />
+    <MESSAGE value="#11 Sore 데이터베이스 개발 및 서비스 로직 개발&#10;&#10;- 워크벤치에서 Store 테이블 생성&#10;- Entity, Repository 생성 ** 엔티티에 고정값이 들어가야 하면 enum 사용하고 엔티티에 꼭 @Enumerate()사용&#10;- buisness, converter, service, controller 생성" />
+    <option name="LAST_COMMIT_MESSAGE" value="#11 Sore 데이터베이스 개발 및 서비스 로직 개발&#10;&#10;- 워크벤치에서 Store 테이블 생성&#10;- Entity, Repository 생성 ** 엔티티에 고정값이 들어가야 하면 enum 사용하고 엔티티에 꼭 @Enumerate()사용&#10;- buisness, converter, service, controller 생성" />
   </component>
 </project>
