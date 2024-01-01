@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5917913-ac9b-43df-a19e-85654e96e24d" name="Changes" comment="#11 Sore 데이터베이스 개발 및 서비스 로직 개발&#10;&#10;- 워크벤치에서 Store 테이블 생성&#10;- Entity, Repository 생성 ** 엔티티에 고정값이 들어가야 하면 enum 사용하고 엔티티에 꼭 @Enumerate()사용&#10;- buisness, converter, service, controller 생성">
+    <list default="true" id="f5917913-ac9b-43df-a19e-85654e96e24d" name="Changes" comment="#12 Store-menu 데이터베이스 개발 및 서비스 로직 개발&#10;&#10;- 워크벤치에서 Store_menu 테이블 생성&#10;- Entity, Repository 생성 ** 엔티티에 고정값이 들어가야 하면 enum 사용하고 엔티티에 꼭 @Enumerate()사용&#10;- buisness, converter, service, controller 생성">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/org/delivery/api/domain/storemenu/converter/StoreMenuConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/org/delivery/api/domain/storemenu/converter/StoreMenuConverter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +118,8 @@
       <workItem from="1703741761471" duration="58000" />
       <workItem from="1703754027228" duration="7703000" />
       <workItem from="1703829456732" duration="5716000" />
-      <workItem from="1703983860244" duration="8305000" />
+      <workItem from="1703983860244" duration="8392000" />
+      <workItem from="1704069918441" duration="3502000" />
     </task>
     <task id="LOCAL-00001" summary="#1 프로젝트 생성 및 모듈 구성">
       <option name="closed" value="true" />
@@ -207,7 +209,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703991593169</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="#12 Store-menu 데이터베이스 개발 및 서비스 로직 개발&#10;&#10;- 워크벤치에서 Store_menu 테이블 생성&#10;- Entity, Repository 생성 ** 엔티티에 고정값이 들어가야 하면 enum 사용하고 엔티티에 꼭 @Enumerate()사용&#10;- buisness, converter, service, controller 생성">
+      <option name="closed" value="true" />
+      <created>1703995567293</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1703995567293</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,6 +235,7 @@
     <MESSAGE value="#9 사용자 로그인시 토큰 발행 적용하기&#10;&#10;사용자 로그인시 accessToken, refreshToken 발생해서 응답해주기" />
     <MESSAGE value="#10 사용자 인증 로직 적용하기&#10;&#10;사용자 인증 로직 적용하기 &#10;- 인터셉터로 header에 토큰이 넘어왔는지 확인을 하고&#10;- 컨텍스트 홀더에 userId를 저장했으니 컨트롤러에서 컨텍스트 홀더에 userId를 추출해야하는데 이방법은 AOP 방식으로 처리&#10;- 어노테이션 만들고 User클래스 생성 후 HandlerMethodArgumentResolver구현하는 리졸버를 만든뒤 &#10;- WebConfig에 해당 리졸버를 등록해준다." />
     <MESSAGE value="#11 Sore 데이터베이스 개발 및 서비스 로직 개발&#10;&#10;- 워크벤치에서 Store 테이블 생성&#10;- Entity, Repository 생성 ** 엔티티에 고정값이 들어가야 하면 enum 사용하고 엔티티에 꼭 @Enumerate()사용&#10;- buisness, converter, service, controller 생성" />
-    <option name="LAST_COMMIT_MESSAGE" value="#11 Sore 데이터베이스 개발 및 서비스 로직 개발&#10;&#10;- 워크벤치에서 Store 테이블 생성&#10;- Entity, Repository 생성 ** 엔티티에 고정값이 들어가야 하면 enum 사용하고 엔티티에 꼭 @Enumerate()사용&#10;- buisness, converter, service, controller 생성" />
+    <MESSAGE value="#12 Store-menu 데이터베이스 개발 및 서비스 로직 개발&#10;&#10;- 워크벤치에서 Store_menu 테이블 생성&#10;- Entity, Repository 생성 ** 엔티티에 고정값이 들어가야 하면 enum 사용하고 엔티티에 꼭 @Enumerate()사용&#10;- buisness, converter, service, controller 생성" />
+    <option name="LAST_COMMIT_MESSAGE" value="#12 Store-menu 데이터베이스 개발 및 서비스 로직 개발&#10;&#10;- 워크벤치에서 Store_menu 테이블 생성&#10;- Entity, Repository 생성 ** 엔티티에 고정값이 들어가야 하면 enum 사용하고 엔티티에 꼭 @Enumerate()사용&#10;- buisness, converter, service, controller 생성" />
   </component>
 </project>
