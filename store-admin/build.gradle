@@ -22,6 +22,7 @@ repositories {
 dependencies {
     // 한 부모 아래에 api 모듈이 db의 모듈을 사용하겠다
     implementation project(':db')
+    implementation project(':common')
 
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
@@ -37,6 +38,8 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
     implementation 'org.springdoc:springdoc-openapi-ui:1.7.0'
+
+    implementation 'org.springframework.boot:spring-boot-starter-amqp'
 
 
 
