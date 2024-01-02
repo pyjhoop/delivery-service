@@ -22,9 +22,13 @@ repositories {
 dependencies {
     // 한 부모 아래에 api 모듈이 db의 모듈을 사용하겠다
     implementation project(':db')
+    implementation project(':common')
 
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
+
+    // amqp 사용하겠다.
+    implementation 'org.springframework.boot:spring-boot-starter-amqp'
 
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-web'
