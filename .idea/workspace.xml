@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5917913-ac9b-43df-a19e-85654e96e24d" name="Changes" comment="#13 상품 주문 개발">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="f5917913-ac9b-43df-a19e-85654e96e24d" name="Changes" comment="#14 가맹점 유저가입 개발&#10;&#10;가맹점에 대한 모듈을 생성 후 시큐리티를 적용했다.&#10;가맹점에 대한 관리자 등록을 위한 회원가입 기능 개발">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/src/main/java/org/delivery/db/store/StoreRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/db/src/main/java/org/delivery/db/store/StoreRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store-admin/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/store-admin/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/store-admin/src/main/java/org/delivery/storeadmin/domain/user/converter/StoreUserConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/store-admin/src/main/java/org/delivery/storeadmin/domain/user/converter/StoreUserConverter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +43,7 @@
         <option value="AnnotationType" />
         <option value="Enum" />
         <option value="Interface" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -62,25 +62,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "C:/service/store-admin/src/main/java/org/delivery/storeadmin/common",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/service/store-admin/src/main/java/org/delivery/storeadmin/common&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\service\store-admin\src\main\java\org\delivery\storeadmin\common" />
@@ -143,7 +144,8 @@
       <workItem from="1703754027228" duration="7703000" />
       <workItem from="1703829456732" duration="5716000" />
       <workItem from="1703983860244" duration="8392000" />
-      <workItem from="1704069918441" duration="9548000" />
+      <workItem from="1704069918441" duration="14602000" />
+      <workItem from="1704117833179" duration="387000" />
     </task>
     <task id="LOCAL-00001" summary="#1 프로젝트 생성 및 모듈 구성">
       <option name="closed" value="true" />
@@ -249,7 +251,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704076718563</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="#14 가맹점 유저가입 개발&#10;&#10;가맹점에 대한 모듈을 생성 후 시큐리티를 적용했다.&#10;가맹점에 대한 관리자 등록을 위한 회원가입 기능 개발">
+      <option name="closed" value="true" />
+      <created>1704084416754</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1704084416754</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,6 +279,7 @@
     <MESSAGE value="#11 Sore 데이터베이스 개발 및 서비스 로직 개발&#10;&#10;- 워크벤치에서 Store 테이블 생성&#10;- Entity, Repository 생성 ** 엔티티에 고정값이 들어가야 하면 enum 사용하고 엔티티에 꼭 @Enumerate()사용&#10;- buisness, converter, service, controller 생성" />
     <MESSAGE value="#12 Store-menu 데이터베이스 개발 및 서비스 로직 개발&#10;&#10;- 워크벤치에서 Store_menu 테이블 생성&#10;- Entity, Repository 생성 ** 엔티티에 고정값이 들어가야 하면 enum 사용하고 엔티티에 꼭 @Enumerate()사용&#10;- buisness, converter, service, controller 생성" />
     <MESSAGE value="#13 상품 주문 개발" />
-    <option name="LAST_COMMIT_MESSAGE" value="#13 상품 주문 개발" />
+    <MESSAGE value="#14 가맹점 유저가입 개발&#10;&#10;가맹점에 대한 모듈을 생성 후 시큐리티를 적용했다.&#10;가맹점에 대한 관리자 등록을 위한 회원가입 기능 개발" />
+    <option name="LAST_COMMIT_MESSAGE" value="#14 가맹점 유저가입 개발&#10;&#10;가맹점에 대한 모듈을 생성 후 시큐리티를 적용했다.&#10;가맹점에 대한 관리자 등록을 위한 회원가입 기능 개발" />
   </component>
 </project>
